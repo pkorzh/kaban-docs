@@ -3,4 +3,8 @@ title: Boards
 lang: en-US
 ---
 
-# Hello
+# Boards
+
+A *board* is backlog visualization. Single board can aggregate multiple backlog.
+
+## Ticket colors

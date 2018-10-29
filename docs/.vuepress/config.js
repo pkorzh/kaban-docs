@@ -1,5 +1,5 @@
 module.exports = {
-	title: '',
+	title: 'Kaban Docs',
 
 	description: 'Kaban Project Management Tool',
 
@@ -12,17 +12,25 @@ module.exports = {
 	themeConfig: {
 		logo: '/kaban-logo.svg',
 
+		displayAllHeaders: true,
+
 		sidebar: [
 			'/',
 			{
 				title: 'Core Concepts',
 				collapsable: false,
 				children: [
+					'/tickets/',
 					'/backlogs/',
 					'/boards/',
-					'/boards/colors',
+					'/workflow/',
+					'/tql/',
 				]
 			},
 		],
 	},
+
+	plugins: [
+		'@vuepress/medium-zoom'
+	],
 };
