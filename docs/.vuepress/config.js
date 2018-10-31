@@ -14,17 +14,25 @@ module.exports = {
 
 		displayAllHeaders: true,
 
+		lastUpdated: 'Last Updated',
+
+		repo: 'pkorzh/kaban',
+		docsRepo: 'pkorzh/kaban-docs',
+		docsDir: 'docs',
+		editLinks: true,
+
 		sidebar: [
 			'/',
+			'/installing-on-premises.md',
 			{
 				title: 'Core Concepts',
 				collapsable: false,
 				children: [
-					'/tickets/',
-					'/backlogs/',
-					'/boards/',
-					'/workflow/',
-					'/tql/',
+					'/tickets.md',
+					'/backlogs.md',
+					'/boards.md',
+					'/workflow.md',
+					'/tql.md',
 				]
 			},
 		],
