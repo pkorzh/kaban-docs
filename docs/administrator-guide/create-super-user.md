@@ -4,3 +4,5 @@ lang: en-US
 ---
 
 # Create Super User
+
+`npm run create-super-user`

@@ -46,6 +46,8 @@ module.exports = {
 					'/administrator-guide/create-super-user.md',
 					'/administrator-guide/calc-forecast.md',
 					'/administrator-guide/take-status-slice.md',
+					'/administrator-guide/notifications.md',
+					'/administrator-guide/storage.md',
 				]
 			},
 		],

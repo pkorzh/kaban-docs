@@ -5,3 +5,4 @@ lang: en-US
 
 # Take Status Slice
 
+`npm run take-status-slice` 
