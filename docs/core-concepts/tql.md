@@ -5,6 +5,20 @@ lang: en-US
 
 # Tickets Query Language (TQL)
 
+TQL consists of one or more search criterias. Each criteria is composed of three pieces: `field`+`operator`+`value`. Criterias can be joined using boolean operators such as `and` and `or`.
+
+```
+status = open
+
+status != closed
+
+createdAt >= yesterday
+```
+
+```
+status in [development, verification] and type = story
+```
+
 ## Filterable fields
 
 - `rank`
