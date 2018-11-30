@@ -21,11 +21,27 @@ Max 1000 recent items is used to calculate cycle time.
 
 Kaban uses a simple formula to make forecast. Every time the ticket is *closed* we calculate it lead and cycle time. Having average lead time we can miltiply it by the total number of not closed tickets in backlog and get amount of time we need to complete all tickets.
 
-Even though this approach is pretty naive it can provide us some insights on backlog duration assuming all tickets are equally sized. On practice, most of the time they are not.
+Even though this approach is pretty naive it can provide us some insights on backlog duration assuming all tickets are equally sized. In reality we wont get well sized ticket, so calculating average can be misleading.
+
 
 ### Coefficient of variation
 
 Standard deviation is a way of stating how far away or close the results are to mean of the data(lead time in our case).
+
+```
+average = 1 + 1 + 1 + 1 + 5 = 1.8
+coefficient_of_variation = 99%
+```
+
+```
+average = 1 + 1 + 1 + 1 + 2 = 1.2
+coefficient_of_variation = 37%
+```
+
+```
+average = 1.5 + 1.2 + 1.4 + 1 + 1.1 = 1.23
+coefficient_of_variation = 16%
+```
 
 ### Percentiles
 
