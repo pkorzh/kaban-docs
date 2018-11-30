@@ -45,6 +45,16 @@ coefficient_of_variation = 16%
 
 ### Percentiles
 
+Percentile is the value below which a percentage of data falls.
+
+the 50th percentile(aka average) is 1 <br>
+the 99th percentile is 5
+
+Percentiles along with Coefficient of variation helps identify outstanding data.
+
 ### Lower and Upper Bound
 
-
+```
+lower_bound = forecast_end_date * 0.6
+upper_bound = forecast_end_date * 1.2
+```
