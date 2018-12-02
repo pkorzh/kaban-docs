@@ -12,7 +12,7 @@ module.exports = {
 	themeConfig: {
 		logo: '/kaban-logo.svg',
 
-		displayAllHeaders: true,
+		//displayAllHeaders: true,
 
 		lastUpdated: 'Last Updated',
 
@@ -28,11 +28,26 @@ module.exports = {
 				title: 'Core Concepts',
 				collapsable: false,
 				children: [
-					'/tickets.md',
-					'/backlogs.md',
-					'/boards.md',
-					'/workflow.md',
-					'/tql.md',
+					'/core-concepts/tickets.md',
+					'/core-concepts/backlogs.md',
+					'/core-concepts/boards.md',
+					'/core-concepts/workflow.md',
+					'/core-concepts/tql.md',
+					'/core-concepts/users.md',
+				]
+			},
+			{
+				title: 'Administrator guide',
+				collapsable: false,
+				children: [
+					'/administrator-guide/bootstrap.md',
+					'/administrator-guide/rebalance-rank.md',
+					'/administrator-guide/add-test-data.md',
+					'/administrator-guide/create-super-user.md',
+					'/administrator-guide/calc-forecast.md',
+					'/administrator-guide/take-status-slice.md',
+					'/administrator-guide/notifications.md',
+					'/administrator-guide/storage.md',
 				]
 			},
 		],
