@@ -9,7 +9,7 @@ lang: en-US
 git clone git@github.com:pkorzh/kaban.git
 cd kaban
 npm install
-npm run build
+API_URL=https://example.com npm run build
 ```
 
 ## Environment Variables
@@ -37,5 +37,16 @@ eb init
 Then lets create Beanstalk Application.
 
 ```
-eb create --profile korzh --instance_type t2.micro --branch_default develop --scale 1 --envvars DB_HOST=ds113442.mlab.com:13442,DB_NAME=<db_name>,DB_USER=<db_user>,DB_PASS=<db_pass>,JWT_SECRET=<jwt_secret> --elb-type application
+eb create \
+	--instance_type t2.micro \
+	--scale 1 \
+	--envvars \
+		DB_HOST=dsxxxxxx.mlab.com:13442,\
+		DB_NAME=<db_name>,\
+		DB_USER=<db_user>,\
+		DB_PASS=<db_pass>,\
+		JWT_SECRET=<jwt_secret> \
+		REDIS_HOST=<redis_host> \
+		API_URL=<api_url> \
+	--elb-type application
 ```

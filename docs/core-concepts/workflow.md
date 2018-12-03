@@ -7,4 +7,4 @@ lang: en-US
 
 *Workflow* is a collection of ticket statuses and transitions.
 
-<img :src="$withBase('/kaban-workflow.png')" alt="foo">
+<img :src="$withBase('/kaban-workflow.png')" alt="Kaban Workflow">
