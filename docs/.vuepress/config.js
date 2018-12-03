@@ -1,7 +1,7 @@
 module.exports = {
 	title: 'Kaban Docs',
 
-	description: 'Kaban Project Management Tool',
+	description: 'Open Source Issue Tracker',
 
 	head: [
 		['link', { rel: 'shortcut icon', type: "image/x-icon", href: `/favicon.ico` }],
